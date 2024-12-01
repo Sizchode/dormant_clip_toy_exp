@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/oscar/home/zliu328/continual_learning/codebase/mian_weight_included_kaiming.py", line 230, in <module>
+    train_dataset = GTSRBTrainDataset(root_dir=config["train_data_path"], transform=transform)
+  File "/oscar/home/zliu328/continual_learning/codebase/dataloader.py", line 16, in __init__
+    for _, row in annotations.iterrows():
+  File "/users/zliu328/.local/lib/python3.9/site-packages/pandas/core/frame.py", line 1554, in iterrows
+    s = klass(v, index=columns, name=k).__finalize__(self)
+  File "/users/zliu328/.local/lib/python3.9/site-packages/pandas/core/series.py", line 584, in __init__
+    data = sanitize_array(data, index, dtype, copy)
+  File "/users/zliu328/.local/lib/python3.9/site-packages/pandas/core/construction.py", line 606, in sanitize_array
+    subarr = maybe_infer_to_datetimelike(data)
+  File "/users/zliu328/.local/lib/python3.9/site-packages/pandas/core/dtypes/cast.py", line 1190, in maybe_infer_to_datetimelike
+    return lib.maybe_convert_objects(  # type: ignore[return-value]
+  File "lib.pyx", line 2543, in pandas._libs.lib.maybe_convert_objects
+  File "/users/zliu328/.local/lib/python3.9/site-packages/numpy/core/numeric.py", line 274, in full
+    @set_array_function_like_doc
+KeyboardInterrupt

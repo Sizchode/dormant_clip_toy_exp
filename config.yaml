@@ -1,0 +1,15 @@
+project: "vitb32-gtsrb-dormant-neurons-seeds"
+seed: 52
+num_epochs: 25
+learning_rate: 5e-05
+gradient_accumulation_steps: 1
+dataset: "GTSRB"
+model: "CLIP Supervised Fine-Tuning with Dormant Neuron Monitoring"
+# thresholds: [0.1, 0.01 ,0.001]
+thresholds: [0.01]
+batch_size: 512
+weight_decay: 1e-4
+label_smoothing: 0.1
+train_data_path: "/users/zliu328/continual_learning/data/gtsrb/GTSRB/Training"
+val_annotations_file: "/users/zliu328/continual_learning/data/gtsrb/GT-final_test.csv"
+val_img_dir: "/users/zliu328/continual_learning/data/gtsrb/GTSRB/Final_Test/Images"
